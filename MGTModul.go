@@ -54,7 +54,7 @@ func removeDuplicates(elements []string) []string {
 	return result
 }
 
-func response(www string) string {
+func Response(www string) string {
 	req, err := http.NewRequest("GET", www, nil)
 
 	client := &http.Client{}
