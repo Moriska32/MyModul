@@ -2,11 +2,11 @@ package MGTModul
 
 import (
 	"bufio"
-	"fmt"
-	"golang.org/x/text/encoding/charmap"
-	"golang.org/x/text/transform"
+	"io/ioutil"
+	"log"
+	"net/http"
+
 	"os"
-	"strings"
 )
 
 func readLines(path string) ([]string, error) {
