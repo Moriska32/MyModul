@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func readLines(path string) ([]string, error) {
+func ReadLines(path string) ([]string, error) {
 	file, err := os.Open(path)
 	if err != nil {
 		return nil, err
@@ -24,7 +24,7 @@ func readLines(path string) ([]string, error) {
 	return lines, scanner.Err()
 }
 
-func checkin(OPs []string, OP string) bool {
+func Checkin(OPs []string, OP string) bool {
 
 	var status bool
 	status = false
@@ -38,7 +38,7 @@ func checkin(OPs []string, OP string) bool {
 
 }
 
-func removeDuplicates(elements []string) []string {
+func RemoveDuplicates(elements []string) []string {
 	encountered := map[string]bool{}
 
 	// Create a map of all unique elements.
@@ -71,7 +71,7 @@ func Response(www string) string {
 
 }
 
-func responseRPD(url string, data string) []byte {
+func ResponseRPD(url string, data string) []byte {
 
 	var username string = "mgtgup"
 	var passwd string = "mgt2017"
